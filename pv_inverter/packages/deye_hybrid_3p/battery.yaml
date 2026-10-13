@@ -24,7 +24,7 @@ sensor:
     state_class: "total_increasing"
     accuracy_decimals: 1
     filters:
-      - multiply: 1
+      - multiply: 1.0
     value_type: U_WORD
     icon: "mdi:battery-charging"
 
@@ -39,7 +39,7 @@ sensor:
     state_class: "total_increasing"
     accuracy_decimals: 1
     filters:
-      - multiply: 1
+      - multiply: 1.0
     value_type: U_WORD
     icon: "mdi:battery-minus"
 
@@ -55,7 +55,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:battery-charging-100"
 
   - platform: modbus_controller
@@ -70,7 +70,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:battery-arrow-down"
 
   - platform: modbus_controller
@@ -419,7 +419,7 @@ switch:
     name: "Battery Wake Up"
     register_type: holding
     address: 112
-    bitmask: 1 # Bit0: Battery 1 wake up (0=enabled, 1=disabled)
+    bitmask: 1
     entity_category: config
     icon: "mdi:battery-charging"
 
@@ -429,7 +429,7 @@ switch:
     name: "Battery 2 Wake Up"
     register_type: holding
     address: 112
-    bitmask: 256 # Bit8: Battery 2 wake up (0=enabled, 1=disabled)
+    bitmask: 256
     entity_category: config
     disabled_by_default: true
     icon: "mdi:battery-charging"

@@ -141,7 +141,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
-      - multiply: 1
+      - multiply: 1.0
     icon: "mdi:transmission-tower-import"
 
   - platform: modbus_controller
@@ -156,7 +156,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
-      - multiply: 1
+      - multiply: 1.0
     icon: "mdi:transmission-tower-export"
 
   - platform: modbus_controller
@@ -171,7 +171,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:transmission-tower-import"
 
   - platform: modbus_controller
@@ -186,7 +186,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:transmission-tower-export"
 
   - platform: modbus_controller

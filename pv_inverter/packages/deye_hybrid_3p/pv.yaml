@@ -218,7 +218,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1
     icon: "mdi:solar-power"
 
 switch:

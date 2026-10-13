@@ -1,4 +1,4 @@
-﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -125,7 +125,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_WORD
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:home-lightning-bolt"
 
   - platform: modbus_controller
@@ -140,7 +140,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:home-lightning-bolt"
 
   - platform: modbus_controller
